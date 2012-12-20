@@ -211,6 +211,7 @@
 
   <!-- Initialize JS Plugins -->
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/app.js"></script>
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/siegeengine.js"></script>
 <?php if ($orbit > 0) : ?>
 	<script type="text/javascript">
        $(window).load(function() {

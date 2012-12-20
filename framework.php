@@ -202,8 +202,7 @@ if ( !$loadMoo ) {
 #-------------End Construct Code--------------------------------------#
 
 // Add stylesheets etc
-$doc->addStyleSheet($template.'/css/foundation.css');
-$doc->addStyleSheet($template.'/css/templateCore.css');
+$doc->addStyleSheet($template.'/css/app.css');
 $doc->addCustomTag('<script src="'.$template.'/js/foundation/modernizr.foundation.js"></script>');
 
 
