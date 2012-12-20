@@ -204,11 +204,11 @@ if ( !$loadMoo ) {
 // Add stylesheets etc
 $doc->addStyleSheet($template.'/css/foundation.css');
 $doc->addStyleSheet($template.'/css/templateCore.css');
-$doc->addCustomTag('<script src="'.$template.'/js/modernizr.foundation.js"></script>');
+$doc->addCustomTag('<script src="'.$template.'/js/foundation/modernizr.foundation.js"></script>');
 
 
  if ($minFound > 0) { 
-    $doc->addCustomTag('<script src="'.$template.'/js/foundation.js"></script>');
+    $doc->addCustomTag('<script src="'.$template.'/js/foundation/foundation.js"></script>');
   }
   else {
 	  
@@ -216,46 +216,46 @@ $doc->addCustomTag('<script src="'.$template.'/js/modernizr.foundation.js"></scr
     $doc->addCustomTag('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>');
    }
    if ($unReveal > 0) {
-    $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.reveal.js"></script>');
+    $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.reveal.js"></script>');
    }	
 
    if ($unOrbit  > 0) { 
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.orbit.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.orbit.js"></script>');
    } 	
 
   if ($unNav > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.navigation.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.navigation.js"></script>');
   } 	
 
   if ($unButt > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.buttons.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.buttons.js"></script>');
   } 
 
   if ($unTabs > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.tabs.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.tabs.js"></script>');
   } 
 
   if ($unForms > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.forms.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.forms.js"></script>');
   }
 
   if ($unTooltips > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.tooltips.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.tooltips.js"></script>');
   }
 
   if ($unAccord > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.accordion.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.accordion.js"></script>');
   } 	
 
   if ($unPlaceholder > 0) { 
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.placeholder.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.placeholder.js"></script>');
   }
 
   if ($unAlerts > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/jquery.foundation.alerts.js"></script>');
+  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.alerts.js"></script>');
   } 	
 }
  if ($offCanvas > 0) {
 	$doc->addStyleSheet($template.'/css/offcanvas.css');
-	$doc->addCustomTag('<script src="'.$template.'/js/jquery.offcanvas.js"></script>');
+	$doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.offcanvas.js"></script>');
   }

@@ -153,7 +153,7 @@
             </div>
         <?php endif; ?>	      
   <!-- Initialize JS Plugins -->
-  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/app.js"></script>
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/foundation/app.js"></script>
 <?php if ($orbit > 0) : ?>
 	<script type="text/javascript">
        $(window).load(function() {
