@@ -16,6 +16,13 @@
 		</ul></p>
 
 <h3>Check out <a href="http://www.siegeengine.org/">SiegeEngine.org</a> for more information.</h3>
+<h5>Forked - 20/12/12 by <a href="https://github.com/JacobDorman/siegeengine/">JacobDorman</a></h5>
+<ul>
+	<li>Converted to use compass foundation<br>
+		<span>remember to change http_path in config.rb to match your installation</span>
+	</li>
+	<li></li>
+</ul>
 <h5>Updated - 14/10/12</h5>
 <p>Added off-canvas layouts</p>
 <p>Known issue with "show/hide password" feature. Fix coming in next update.</p>

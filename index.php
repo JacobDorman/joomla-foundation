@@ -16,7 +16,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/<?php echo $customCSS ?>">
   <?php endif; ?>	
   
-  <?php if ($setWidth) : ?>
+  <?php if ($setWidth) : //TODO only add if not default?>
   <style>
   .row {
     width: <?php echo $setWidth ?>px;
