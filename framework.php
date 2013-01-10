@@ -1,7 +1,7 @@
 <?php defined('_JEXEC') or die;
 /* =====================================================================
-Credit to:	Seth Warburton - Internet Inspired! - @nternetinspired. 		
-Probably should be thanking Nescafe too... 		            
+Credit to:	Seth Warburton - Internet Inspired! - @nternetinspired.
+Probably should be thanking Nescafe too...
 /* ===================================================================== */
 
 // Define shortcuts for template parameters
@@ -37,7 +37,7 @@ if ($option=="com_content" && $view=="article") {
     $article_id = $ids[0];
     $article =& JTable::getInstance("content");
     $article->load($article_id);
-    
+
 }
 
 // Count Modules & Stuff
@@ -104,7 +104,7 @@ elseif (($right != "0") && ($left != "0")) {
 $mainWidth = 'eight columns'; $leftWidth = 'two columns'; $rightWidth = 'two columns';
 }
 
-//Peripheral module logic. 
+//Peripheral module logic.
 
 // Top Module Logic
 $top = compact( 'top1', 'top2', 'top3' );//get modules into array
@@ -214,55 +214,56 @@ $doc->addStyleSheet($template.'/css/app.css');
 $doc->addCustomTag('<script src="'.$template.'/js/foundation/modernizr.foundation.js"></script>');
 
 
- if ($minFound > 0) { 
-    $doc->addCustomTag('<script src="'.$template.'/js/foundation/foundation.js"></script>');
+
+ if ($minFound > 0) {
+    $deferTags[] = '<script src="'.$template.'/js/foundation/foundation.js"></script>';
   }
   else {
-	  
+
    if ($jQuery > 0) {
-    $doc->addCustomTag('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>');
+    $deferTags[] = '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>';
    }
    if ($unReveal > 0) {
-    $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.reveal.js"></script>');
-   }	
+    $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.reveal.js"></script>';
+   }
 
-   if ($unOrbit  > 0) { 
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.orbit.js"></script>');
-   } 	
+   if ($unOrbit  > 0) {
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.orbit.js"></script>';
+   }
 
   if ($unNav > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.navigation.js"></script>');
-  } 	
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.navigation.js"></script>';
+  }
 
   if ($unButt > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.buttons.js"></script>');
-  } 
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.buttons.js"></script>';
+  }
 
   if ($unTabs > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.tabs.js"></script>');
-  } 
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.tabs.js"></script>';
+  }
 
   if ($unForms > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.forms.js"></script>');
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.forms.js"></script>';
   }
 
   if ($unTooltips > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.tooltips.js"></script>');
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.tooltips.js"></script>';
   }
 
   if ($unAccord > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.accordion.js"></script>');
-  } 	
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.accordion.js"></script>';
+  }
 
-  if ($unPlaceholder > 0) { 
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.placeholder.js"></script>');
+  if ($unPlaceholder > 0) {
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.placeholder.js"></script>';
   }
 
   if ($unAlerts > 0) {
-  $doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.foundation.alerts.js"></script>');
-  } 	
+  $deferTags[] = '<script src="'.$template.'/js/foundation/jquery.foundation.alerts.js"></script>';
+  }
 }
  if ($offCanvas > 0) {
 	$doc->addStyleSheet($template.'/css/offcanvas.css');
-	$doc->addCustomTag('<script src="'.$template.'/js/foundation/jquery.offcanvas.js"></script>');
+	$deferTags[] = '<script src="'.$template.'/js/foundation/jquery.offcanvas.js"></script>';
   }
