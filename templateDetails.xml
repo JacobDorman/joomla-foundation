@@ -68,7 +68,7 @@
 
 	<config>
 		<fields name="params">
-			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/siegeengine/" >
+			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/joomla-foundation/" >
 				<field name="loadMoo" type="radio" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
 					<option value="1">TPL_SETTINGS_LOAD_MOO_YES</option>
 					<option value="0">TPL_SETTINGS_LOAD_MOO_NO</option>
@@ -83,8 +83,8 @@
 					<field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
 					<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
 					<field name="menuModTitle" type="text" default="MenuModule" label="TPL_SETTINGS_MENUMODULE_LABEL" description="TPL_SETTINGS_MENUMODULE_DESC" size="15" />
-					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/siegeengine/css/" filter="" exclude="foundation\.css|templateCore\.css|index\.html" stripext="" />
-					<field name="layout" type="filelist" default="default.php" label="TPL_SETTINGS_LAYOUT_LABEL" description="TPL_SETTINGS_LAYOUT_DESC" directory="templates/siegeengine/layouts/" filter="" exclude="index\.html" stripext="" />
+					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/joomla-foundation/css/" filter="" exclude="foundation\.css|templateCore\.css|index\.html" stripext="" />
+					<field name="layout" type="filelist" default="default.php" label="TPL_SETTINGS_LAYOUT_LABEL" description="TPL_SETTINGS_LAYOUT_DESC" directory="templates/joomla-foundation/layouts/" filter="" exclude="index\.html" stripext="" />
 					<field name="logoUp" type="radio" default="1" label="TPL_SETTINGS_LOGO_SELECT_LABEL" description="TPL_SETTINGS_LOGO_SELECT_DESC">
 					<option value="1">TPL_SETTINGS_LOGO_SELECT_UP</option>
 					<option value="0">TPL_SETTINGS_LOGO_SELECT_MOD</option>
@@ -101,7 +101,7 @@
 
 			</fieldset>
 
-			<fieldset name="Foundation Options" label="TPL_SETTINGS_FOUNDATION_OPTIONS_LABEL" addfieldpath="/templates/siegeengine/" >
+			<fieldset name="Foundation Options" label="TPL_SETTINGS_FOUNDATION_OPTIONS_LABEL" addfieldpath="/templates/joomla-foundation/" >
 							<field type="spacer" default=" " label="TPL_SETTINGS_FOUNDATION_OPTIONS_NOTE"/>
 <field type="spacer" default=" " />
 				<field name="unOrbit" type="radio" default="1" label="TPL_SETTINGS_FOUNDATION_ORBIT_LABEL" description="TPL_SETTINGS_FOUNDATION_ORBIT_DESC">
