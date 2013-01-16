@@ -32,7 +32,7 @@
   			  	<a class='sidebar-button button' id="sidebarButton" href="#sidebar"><?php echo $sideButton ?></a>
               <?php } ?>
   			</p>
-            <? } else { ?>
+            <?php } else { ?>
             <nav id="menu" role="navigation" class="nine columns">
                 <jdoc:include type="modules" name="menu" style="none" />
             </nav>
